@@ -1,3 +1,4 @@
+```
 hb1954 init -c .
 cp ../dest.conf . # dest containing a, b, c
 hb1954 dest sync -c .
@@ -6,8 +7,9 @@ hb1954 backup ~/stage -c .
 rm arc.0.0 # Remove from cache
 # turn on dest a
 rm ../dests/b/arc.0.0
-hb1954 dest sync -c .
-# Output:
+```
+`hb1954 dest sync -c .`
+### Output:
 ```
 HashBackup build #1954 Copyright 2009-2017 HashBackup, LLC
 Using destinations in dest.conf
@@ -26,8 +28,8 @@ File "/dest.py", line 930, in sync
 File "/arc.py", line 448, in __init__
 Exception: Error opening archive: Archive is incomplete (reading header): /home/jh/hb-test/dest-sync/hb/arc.0.0: /home/jh/hb-test/dest-sync/hb/arc.0.0
 ```
-hb1954 dest verify -c .
-# Output:
+`hb1954 dest verify -c .`
+### Output:
 ```
 HashBackup build #1954 Copyright 2009-2017 HashBackup, LLC
 Using destinations in dest.conf
