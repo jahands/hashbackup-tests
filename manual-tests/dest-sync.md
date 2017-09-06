@@ -28,6 +28,10 @@ File "/dest.py", line 930, in sync
 File "/arc.py", line 448, in __init__
 Exception: Error opening archive: Archive is incomplete (reading header): /home/jh/hb-test/dest-sync/hb/arc.0.0: /home/jh/hb-test/dest-sync/hb/arc.0.0
 ```
+
+## NOTE
+In 1951, running a second sync here would result in arc.0.0 being deleted from all destinations. However, in 1954 it gives the same error as above. Then, when you run dest verify (shown below), it fixes itself.
+
 `hb1954 dest verify -c .`
 ### Output:
 ```
